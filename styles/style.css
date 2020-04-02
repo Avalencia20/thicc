@@ -286,6 +286,7 @@ header {
   height: 100vh;
   background-image: url(../styles/assets/background.png);
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 header img.iphoneMockup {
@@ -298,6 +299,7 @@ header img.iphoneMockup {
 header div.text {
   width: 51%;
   height: 26%;
+  padding-bottom: 57px;
 }
 
 header div.text h1 {
@@ -330,6 +332,10 @@ header div.text h3 {
   color: #FFFFFF;
 }
 
+header .downloadButtons .appStore {
+  margin-right: 31px;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,7 +359,6 @@ nav ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 31%;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -380,4 +385,60 @@ nav ul .button {
   background: linear-gradient(90deg, #FC987E 0%, #FCB57F 100%);
   border-radius: 100px;
   color: #ffffff;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+nav ul .button.about {
+  width: 140px;
+  margin-right: 60px;
+}
+
+nav ul .button:hover {
+  background: #ffffff;
+  border: 1px solid #FC987E;
+  color: #FC987E;
+}
+
+main div.sec1 {
+  background-image: url(../styles/assets/colornormal.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+}
+
+main div.sec1 section.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main div.sec1 section.about .tittle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+main div.sec1 section.about .tittle img {
+  height: 25%;
+  margin-right: 20px;
+}
+
+main div.sec1 section.about .tittle h2 {
+  font-family: 'Manjari', sans-serif;
+  font-size: 72px;
+  background: -webkit-linear-gradient(91.6deg, #FCB87E 1.68%, #FCD27E 45.13%, #FC987E 99.39%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main div.sec2 {
+  background-image: url(../styles/assets/colornormal.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
 }

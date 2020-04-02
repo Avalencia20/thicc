@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thicc</title>
+    <link type="image/png" href="./styles/assets/favicon.png" rel="icon">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Manjari:700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -17,21 +19,21 @@
                     </a>
                 </div>
                 <ul>
-                    <li class="button"><a href="#">About</a></li>
-                    <li class="button"><a href="#">Contact Us</a></li>
+                    <li class="button about"><a href="#about">About</a></li>
+                    <li class="button contact"><a href="#contact">Contact Us</a></li>
                     
                 </ul>
             </nav>
             <div class="text">
-                <h1>Lorem ipsum dolor sit amet.</h1>
+                <h1>Lorem ipsum dolor sit amet</h1>
                 <h3>Lorem ipsum dolor sit amet lorem ipsum</h3>
             </div>
             <div class="downloadButtons">
                 <a href="#">
-                    <img src="./styles/assets/image 31.png" alt="App Store Download Link">
+                    <img src="./styles/assets/image 31.png" alt="App Store Download Link" class="appStore">
                 </a>
                 <a href="#">
-                    <img src="./styles/assets/image 32.png" alt=" Google Play Store Link">
+                    <img src="./styles/assets/image 32.png" alt=" Google Play Store Link" class="playStore">
                 </a>
             </div>
             <div class="iphones">
@@ -43,5 +45,47 @@
         </div>
         
     </header>
+
+    <main>
+        <div class="sec1">   
+            <div class="wrapper">
+                <section class="about" id="about">
+                    <img src="./styles/assets/Match pop up.png" alt="profile display for thicc app">
+                    <div class="bio">
+                        <div class="tittle">
+                            <img src="./styles/assets/Vector1.png" alt="logo">
+                            <h2>ABOUT</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius modi necessitatibus, tempore eaque aliquam culpa commodi nulla exercitationem nemo non?</p>
+                    </div>
+                </section>
+            </div>  
+        </div>   
+
+        <div class="sec2">
+            <div class="wrapper">
+                <section class="contact" id="contact">
+                    <h2 class="heading">contact us</h2>
+                    <form action="#" method="POST" class="contact-us">
+                    
+                        <div class="user-info">
+                        <label for="Name sr-only" >Name</label>
+                        <input type="text" name="name" id="Name" placeholder="Name">
+                        
+                        <label for="email sr-only">E-mail</label>
+                        <input type="email" name="E-mail" id="email" placeholder="Email">
+                        </div>
+                        
+                        <label for="message sr-only">Message</label>
+                        <textarea name="story" id="message" cols="100" rows="15"placeholder="Message"
+                        ></textarea>
+                    
+                        <button class="button">Submit </button>
+                    
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
