@@ -474,7 +474,7 @@ main div.sec1 section.about .tittle h2 {
   font-family: 'Manjari', sans-serif;
   font-size: 80px;
   background: -webkit-linear-gradient(91.6deg, #FCB87E 1.68%, #FCD27E 45.13%, #FC987E 99.39%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -488,7 +488,7 @@ main div.sec1 section.about .bio p {
   margin: 0 auto;
   background: -webkit-linear-gradient(91.6deg, #FCB87E 1.68%, #FCD27E 45.13%, #FC987E 99.39%);
   background-clip: border-box;
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-bottom: 20%;
   font-size: 20px;
