@@ -293,13 +293,14 @@ header img.iphoneMockup {
   position: absolute;
   height: 64%;
   left: 770px;
-  top: 193px;
+  top: 111px;
 }
 
 header div.text {
   width: 51%;
   height: 26%;
   padding-bottom: 57px;
+  padding-top: 111px;
 }
 
 header div.text h1 {
@@ -344,12 +345,22 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 35px;
-  padding-bottom: 111px;
 }
 
 nav .logo {
   width: 144px;
   height: 47px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border: 3px solid transparent;
+  border-radius: 100px;
+  padding: 5px 0 0 10px;
+}
+
+nav .logo:hover {
+  border: 1px solid #FC987E;
+  background: -webkit-gradient(linear, left top, right top, from(#FC987E), to(#FCB57F));
+  background: linear-gradient(90deg, #FC987E 0%, #FCB57F 100%);
 }
 
 nav ul {
@@ -379,7 +390,7 @@ nav ul .button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 174px;
+  width: 177px;
   height: 42px;
   background: -webkit-gradient(linear, left top, right top, from(#FC987E), to(#FCB57F));
   background: linear-gradient(90deg, #FC987E 0%, #FCB57F 100%);
@@ -397,12 +408,12 @@ nav ul .button.about {
 
 nav ul .button:hover {
   background: #ffffff;
-  border: 1px solid #FC987E;
+  border: 2px solid #FC987E;
   color: #FC987E;
 }
 
 main div.sec1 {
-  background-image: url(../styles/assets/colornormal.png);
+  background-image: url(../styles/assets/background.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 100vh;
@@ -412,6 +423,34 @@ main div.sec1 section.about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: calc(100vh - 82px);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main div.sec1 section.about .gallery {
+  position: relative;
+}
+
+main div.sec1 section.about .gallery img.femaleProfile {
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  width: 70%;
+  position: absolute;
+  left: -15%;
+  top: -15%;
+}
+
+main div.sec1 section.about .gallery img.matchMade {
+  position: relative;
+  width: 80%;
+  left: 27%;
+  top: 13%;
+  -webkit-transform: rotate(13deg);
+          transform: rotate(13deg);
 }
 
 main div.sec1 section.about .tittle {
@@ -421,6 +460,9 @@ main div.sec1 section.about .tittle {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main div.sec1 section.about .tittle img {
@@ -430,10 +472,26 @@ main div.sec1 section.about .tittle img {
 
 main div.sec1 section.about .tittle h2 {
   font-family: 'Manjari', sans-serif;
-  font-size: 72px;
+  font-size: 80px;
   background: -webkit-linear-gradient(91.6deg, #FCB87E 1.68%, #FCD27E 45.13%, #FC987E 99.39%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+main div.sec1 section.about .bio {
+  width: 50%;
+}
+
+main div.sec1 section.about .bio p {
+  width: 58%;
+  text-align: center;
+  margin: 0 auto;
+  background: -webkit-linear-gradient(91.6deg, #FCB87E 1.68%, #FCD27E 45.13%, #FC987E 99.39%);
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 20%;
+  font-size: 20px;
 }
 
 main div.sec2 {
