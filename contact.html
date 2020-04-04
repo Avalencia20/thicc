@@ -10,46 +10,60 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <!-- <header>
-        
-    </header> -->
 
     <main>
-        <div class="wrapper">
-            <nav class="topBar">
-                <div class="logo">
-                    <a href="./index.html">
-                        <img src="./styles/assets/Logo Bold White.png" alt="Thicc Logo">
-                    </a>
-                </div>
-                <ul>
-                    <li class="button about"><a href="./about.html">About</a></li>
-                    <li class="button contact"><a href="./contact.html">Contact Us</a></li>
-                    
-                </ul>
-            </nav>
-        </div>
+        
         <div class="sec2">
             <div class="wrapper">
-                <section class="contact" id="contact">
-                    <h2 class="heading">contact us</h2>
-                    <form action="#" method="POST" class="contact-us">
-                    
-                        <div class="user-info">
-                        <label for="Name sr-only" >Name</label>
-                        <input type="text" name="name" id="Name" placeholder="Name">
+
+                <nav class="topBar">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./styles/assets/Logo Bold White.png" alt="Thicc Logo">
+                        </a>
+                    </div>
+                    <ul>
+                        <li class="button about"><a href="./about.html">About</a></li>
+                        <li class="button contact"><a href="./contact.html">Contact Us</a></li>
                         
-                        <label for="email sr-only">E-mail</label>
-                        <input type="email" name="E-mail" id="email" placeholder="Email">
+                    </ul>
+                </nav>
+                <section class="contact" id="contact">
+                    
+                    <div class="contactForm">
+                        <h2 class="heading">contact us</h2>
+                        <form action="#" method="POST" class="contact-us">
+                    
+                        
+                            <div class="user-info">
+                                <div class="user-inputs name">
+                                    <label for="Name sr-only" >Name</label>
+                                <input type="text" name="name" id="Name" placeholder="   Name">
+                                </div>
+                                
+                                <div class="user-inputs email">
+                                    <label for="email sr-only">Your Email</label>
+                                    <input type="email" name="E-mail" id="email" placeholder="   Email">
+                                </div>
+                                
+                            </div>
+                        
+                        <div class="user-inputs msg">
+                            <label for="message sr-only">Message</label>
+                            <textarea name="story" id="message" cols="50" rows="15"placeholder="   Message"
+                            ></textarea>
                         </div>
                         
-                        <label for="message sr-only">Message</label>
-                        <textarea name="story" id="message" cols="100" rows="15"placeholder="Message"
-                        ></textarea>
-                    
-                        <button class="button">Submit </button>
-                    
-                    </form>
+                            <button class="button">Submit </button>
+                        
+                        </form>
+                    </div>
+                    <div class="contactInfo">
+                        <div class="logoContact">
+                            <img src="./styles/assets/Vector2.png" alt="Thicc Logo">
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    </div>
                 </section>
             </div>
         </div>

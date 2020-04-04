@@ -495,8 +495,116 @@ main div.sec1 section.about .bio p {
 }
 
 main div.sec2 {
-  background-image: url(../styles/assets/colornormal.png);
+  background-image: url(../styles/assets/background.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 100vh;
+}
+
+main div.sec2 section.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin: 73px auto 0 auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 25px 50px #999999;
+          box-shadow: 10px 25px 50px #999999;
+}
+
+main div.sec2 section.contact .heading {
+  font-size: 30px;
+  font-family: manjari, arial;
+  text-transform: capitalize;
+}
+
+main div.sec2 .contactForm {
+  background-color: white;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+  border-radius: 5px;
+}
+
+main div.sec2 .contactForm .user-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45%;
+}
+
+main div.sec2 .contactForm .user-inputs label {
+  padding-bottom: 10px;
+  font-size: 16px;
+  color: #999999;
+}
+
+main div.sec2 .contactForm .user-inputs input {
+  border-radius: 5px;
+  font-size: 12px;
+  height: 42px;
+  background-color: #f2f4f4;
+}
+
+main div.sec2 .contactForm .user-inputs #message {
+  height: 123px;
+  width: 355px;
+  margin-bottom: 45px;
+  background-color: #f2f4f4;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+main div.sec2 .contactForm .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+main div.sec2 .contactForm .button {
+  margin: 0 0 0 76%;
+  background: -webkit-gradient(linear, left top, right top, from(#FC987E), to(#FCB57F));
+  background: linear-gradient(90deg, #FC987E 0%, #FCB57F 100%);
+  padding: 5px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+main div.sec2 .contactInfo {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FC987E;
+  color: #ffffff;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+main div.sec2 .contactInfo p {
+  text-align: center;
 }
